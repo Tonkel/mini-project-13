@@ -1,4 +1,4 @@
-const location = require("./location");
+const Location = require("./location");
 const Traveller = require("./traveller");
 const Trip = require("./trip");
 
@@ -22,4 +22,4 @@ Location.belongsToMany(Traveller, {
   as: "places_travelled",
 });
 
-module.exports = { Reader, Book, LibraryCard };
+module.exports = { Location, Trip, Traveller };
